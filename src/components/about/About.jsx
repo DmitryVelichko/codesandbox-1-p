@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section className='about section' id='about'>
       <h2 className='section__title'>About Me</h2>
-      <span className='section__subtitle'>My Introduction</span>
+      <span className='section__subtitle'>Let's get acquainted</span>
 
       <div className='about__container container grid'>
         <img src={AboutImg} alt="A man's face" className='about__img' />
@@ -16,9 +16,15 @@ const About = () => {
           <Info />
 
           <p className='about__description'>
-            Frontend Developer, I creatae web pages with UI/UX user interface, I
-            have 2 years of experience and many clients are happy with the
-            projects carried out.
+            Self-motivated, proven team player with an analytical mind bent to problem solving and delivering solutions.
+            <br /><br />
+           <a href='https://github.com/DmitryVelichko' rel='noreferrer' target='_blank'> <i className="uil uil-github"></i>   Github</a>
+            <br /><br />
+            <a href='https://leetcode.com/DmitryVelichko/' rel='noreferrer' target='_blank'><i class="uil uil-analytics"></i>   LeetCode Statistics</a>
+            <br /><br />
+            <a href='https://habr.com/ru/users/Dmitry_Velichko/posts/' rel='noreferrer' target='_blank'><i class="uil uil-notes"></i>    Articles on programming</a>
+            <br /><br />
+            <a href='https://www.youtube.com/channel/UCMoXZFDHxWvNQHYfTo2nyPA/videos' rel='noreferrer' target='_blank'><i class="uil uil-youtube"></i>    YouTube channel</a>
           </p>
 
           <a download='' href={CV} className='button button--flex'>

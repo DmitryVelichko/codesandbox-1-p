@@ -166,6 +166,8 @@
 
   .home__socialIcons {
    display: flex;
+  justify-content: center;
+  align-items: center;
   }
 
   .home__socialIcons a{

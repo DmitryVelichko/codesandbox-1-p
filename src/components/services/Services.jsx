@@ -1,23 +1,23 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './services.css'
 
 const Services = () => {
 
-const [toggleState, setToggleState] = useState(0);
+  const [toggleState, setToggleState] = useState(0);
 
-const toggleTab = (index) => {
-  setToggleState(index)
-}
+  const toggleTab = (index) => {
+    setToggleState(index)
+  }
   return (
     <section className='services section' id='services'>
       <h2 className='section__title'>Services</h2>
-      <span className='section__subtitle'>What I offer</span>
+      <span className='section__subtitle'>How I can help you</span>
 
       <div className='services__container container grid'>
         <div className='services__content'>
           <div>
             <i className='uil uil-web-grid services__icon'></i>
-            <h3 className='services__title'>Product <br/> Designer</h3>
+            <h3 className='services__title'>Frontend</h3>
           </div>
 
           <span className='services__button' onClick={() => toggleTab(1)}>
@@ -28,42 +28,41 @@ const toggleTab = (index) => {
           <div className={toggleState === 1 ? 'services__modal active-modal' : 'services__modal'}>
             <div className='services__modal-content'>
               <i onClick={() => toggleTab(0)} className='uil uil-times services__modal-close'></i>
-              <h3 className='services__modal-title'>Product Designer</h3>
+              <h3 className='services__modal-title'>Frontend Development</h3>
               <p className='services__modal-description'>
-                Service with more than 3 years of experience. Providing quality
-                work to clients and companies.
+                I will help to engage your customers and deliver robust user experience by building web applications, single page applications, and cross-browser and cross-platform websites using React/NextJS.
               </p>
               <ul className='services__modal-services grid'>
                 <li className='services__modal-service'>
                   <i className='uil uil-check-circle services__modal-icon'></i>
                   <p className='services__modal-info'>
-                    I develop the user interface.
+                    Fast Perfomance
                   </p>
                 </li>
 
                 <li className='services__modal-service'>
                   <i className='uil uil-check-circle services__modal-icon'></i>
-                  <p className='services__modal-info'>Web page development.</p>
+                  <p className='services__modal-info'>Cutting-edge, pixel-perfect, beautiful interfaces</p>
                 </li>
 
                 <li className='services__modal-service'>
                   <i className='uil uil-check-circle services__modal-icon'></i>
                   <p className='services__modal-info'>
-                    I create UX element interactions.
-                  </p>
-                </li>
-
-                <li className='services__modal-service'>
-                  <i className='uil uil-check-circle services__modal-icon'></i>
-                  <p className='services__modal-info'>
-                    I position your company brand.
+                    Fast results delivery
                   </p>
                 </li>
 
                 <li className='services__modal-service'>
                   <i className='uil uil-check-circle services__modal-icon'></i>
                   <p className='services__modal-info'>
-                    Design and mockups of products for companies.
+                    Easy to customize and scale
+                  </p>
+                </li>
+
+                <li className='services__modal-service'>
+                  <i className='uil uil-check-circle services__modal-icon'></i>
+                  <p className='services__modal-info'>
+                    I will help you with design and mockups for you website
                   </p>
                 </li>
               </ul>
@@ -74,7 +73,7 @@ const toggleTab = (index) => {
         <div className='services__content'>
           <div>
             <i className='uil uil-arrow services__icon'></i>
-            <h3 className='services__title'>UI/UX <br/> Designer</h3>
+            <h3 className='services__title'>UI/UX</h3>
           </div>
 
           <span onClick={() => toggleTab(2)} className='services__button'>
@@ -84,43 +83,42 @@ const toggleTab = (index) => {
 
           <div className={toggleState === 2 ? 'services__modal active-modal' : 'services__modal'}>
             <div className='services__modal-content'>
-              <i onClick={() => toggleTab(0)}  className='uil uil-times services__modal-close'></i>
-              <h3 className='services__modal-title'>UI/UX Designer</h3>
+              <i onClick={() => toggleTab(0)} className='uil uil-times services__modal-close'></i>
+              <h3 className='services__modal-title'>UI/UX Design</h3>
               <p className='services__modal-description'>
-                Service with more than 3 years of experience. Providing quality
-                work to clients and companies.
+                I will help you to design a web interface and user experience that your clients will love and want to buy. You can share a detailed vision and requirements or let me fulfill your ideas from scratch.
               </p>
               <ul className='services__modal-services grid'>
                 <li className='services__modal-service'>
                   <i className='uil uil-check-circle services__modal-icon'></i>
                   <p className='services__modal-info'>
-                    I develop the user interface.
+                    User-friendly interfaces
                   </p>
                 </li>
 
                 <li className='services__modal-service'>
                   <i className='uil uil-check-circle services__modal-icon'></i>
-                  <p className='services__modal-info'>Web page development.</p>
+                  <p className='services__modal-info'>Innovative UI/UX design</p>
                 </li>
 
                 <li className='services__modal-service'>
                   <i className='uil uil-check-circle services__modal-icon'></i>
                   <p className='services__modal-info'>
-                    I create UX element interactions.
-                  </p>
-                </li>
-
-                <li className='services__modal-service'>
-                  <i className='uil uil-check-circle services__modal-icon'></i>
-                  <p className='services__modal-info'>
-                    I position your company brand.
+                    Engaging user experience
                   </p>
                 </li>
 
                 <li className='services__modal-service'>
                   <i className='uil uil-check-circle services__modal-icon'></i>
                   <p className='services__modal-info'>
-                    Design and mockups of products for companies.
+                    Highly intuitive interfaces
+                  </p>
+                </li>
+
+                <li className='services__modal-service'>
+                  <i className='uil uil-check-circle services__modal-icon'></i>
+                  <p className='services__modal-info'>
+                    Attractive front-end
                   </p>
                 </li>
               </ul>
@@ -131,10 +129,10 @@ const toggleTab = (index) => {
         <div className='services__content'>
           <div>
             <i className='uil uil-edit services__icon'></i>
-            <h3 className='services__title'>Visual <br /> Designer</h3>
+            <h3 className='services__title'>Consulting</h3>
           </div>
 
-          <span onClick={() => toggleTab(3)}  className='services__button'>
+          <span onClick={() => toggleTab(3)} className='services__button'>
             View More
             <i className='uil uil-arrow-right services__button-icon'></i>
           </span>
@@ -142,42 +140,41 @@ const toggleTab = (index) => {
           <div className={toggleState === 3 ? 'services__modal active-modal' : 'services__modal'}>
             <div className='services__modal-content'>
               <i onClick={() => toggleTab(0)} className='uil uil-times services__modal-close'></i>
-              <h3 className='services__modal-title'>Visual Designer</h3>
+              <h3 className='services__modal-title'>Consulting</h3>
               <p className='services__modal-description'>
-                Service with more than 3 years of experience. Providing quality
-                work to clients and companies.
+                If you need to a consultation on any topic related to frontend, feel free to book a call. I can help you with the following topics:
               </p>
               <ul className='services__modal-services grid'>
                 <li className='services__modal-service'>
                   <i className='uil uil-check-circle services__modal-icon'></i>
                   <p className='services__modal-info'>
-                    I develop the user interface.
+                    Frontend design
                   </p>
                 </li>
 
                 <li className='services__modal-service'>
                   <i className='uil uil-check-circle services__modal-icon'></i>
-                  <p className='services__modal-info'>Web page development.</p>
+                  <p className='services__modal-info'>Websites development</p>
                 </li>
 
                 <li className='services__modal-service'>
                   <i className='uil uil-check-circle services__modal-icon'></i>
                   <p className='services__modal-info'>
-                    I create UX element interactions.
-                  </p>
-                </li>
-
-                <li className='services__modal-service'>
-                  <i className='uil uil-check-circle services__modal-icon'></i>
-                  <p className='services__modal-info'>
-                    I position your company brand.
+                    UI/UX design
                   </p>
                 </li>
 
                 <li className='services__modal-service'>
                   <i className='uil uil-check-circle services__modal-icon'></i>
                   <p className='services__modal-info'>
-                    Design and mockups of products for companies.
+                    Company branding
+                  </p>
+                </li>
+
+                <li className='services__modal-service'>
+                  <i className='uil uil-check-circle services__modal-icon'></i>
+                  <p className='services__modal-info'>
+                   Online lessons on Frontend, Algorithms and Data Structures.
                   </p>
                 </li>
               </ul>

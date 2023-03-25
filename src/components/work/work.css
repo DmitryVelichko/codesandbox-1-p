@@ -62,6 +62,11 @@
   transform: translateX(0.25rem);
 }
 
+.linkbox {
+  display: flex;
+  justify-content:space-between;
+}
+
 /* Active Work */
 
 .active-work {

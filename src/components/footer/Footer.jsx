@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className='footer'>
       <div className='footer__container container'>
-        <h1 className='footer__title'>Smith</h1>
+        <h1 className='footer__title'>Thank you for visiting<br/> and have a great day!</h1>
         <ul className='footer__list'>
           <li>
             <a href='#about' className='footer__link'>
@@ -54,7 +54,7 @@ const Footer = () => {
             <i className='bx bxl-github'></i>
           </a>
         </div>
-        <span className="footer__copy">&#169; Di Vi. All rights reserved.</span>
+        <span className="footer__copy">Dmitry Velichko {new Date().getFullYear()}</span>
       </div>
     </footer>
   );
