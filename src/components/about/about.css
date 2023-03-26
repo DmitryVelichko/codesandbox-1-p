@@ -30,10 +30,22 @@
     margin-bottom: var(--mb-0-5);
 }
 
-.uil-github, .uil-analytics, .uil-notes, .uil-youtube{
-    font-size: 1.5rem;
+.about__description .uil-github, .uil-analytics, .uil-notes, .uil-youtube {
+    font-size: 1.2rem;
+    color: var(--title-color)
+}
+
+.about__description a{
+    text-decoration: none;
     color: var(--title-color);
 }
+
+.about__description a:hover {
+    text-decoration: none;
+    font-weight: 900;
+    
+}
+
 
 .about__title {
     font-size: var(--small-font-size);

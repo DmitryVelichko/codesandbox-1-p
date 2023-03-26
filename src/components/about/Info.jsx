@@ -19,7 +19,7 @@ const Info = () => {
         <i className='bx bx-support about__icon'></i>
 
         <h3 className='about__title'>Fluent English</h3>
-        <span className='about__subtitle'>C1 level</span>
+        <span className='about__subtitle'>C1/Proficient Level</span>
       </div>
     </div>
   );

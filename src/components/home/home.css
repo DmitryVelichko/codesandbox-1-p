@@ -22,6 +22,23 @@
 
 .home__social-icon:hover {
   color: var(--title-color-dark);
+  transform: scale(1.5);
+}
+
+.home__social-icon .uil-linkedin {
+  color: #0A66C2;
+}
+
+.home__social-icon .uil-youtube {
+  color: #FF0000;
+}
+
+.home__social-icon .uil-linkedin:hover {
+  color: #0A66C2;
+}
+
+.home__social-icon .uil-youtube:hover {
+  color: #FF0000;
 }
 
 .home__title {
@@ -169,6 +186,8 @@
   justify-content: center;
   align-items: center;
   }
+
+  
 
   .home__socialIcons a{
     margin-left: 1.5rem;

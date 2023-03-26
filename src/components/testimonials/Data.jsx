@@ -19,7 +19,7 @@ export const Data = [
     {
         id: 3,
         image: Image3,
-        title: 'Nargiza, project manager',
+        title: 'Nargiza project manager',
         description: 'We hired Dmitry to help us with our company\'s blockchain dapp. The results were outstanding and Dmitry has done amazing job. Always helpful. And amazing customer service.',
     }
 ]

@@ -1,7 +1,7 @@
 import React from 'react';
 import './about.css';
 import AboutImg from '../../assets/about2.jpg';
-import CV from '../../assets/John-Cv.pdf';
+import CV from '../../assets/Dmitry_Velichko_Frontend_CV.pdf';
 import Info from './Info';
 
 const About = () => {
@@ -18,13 +18,13 @@ const About = () => {
           <p className='about__description'>
             Self-motivated, proven team player with an analytical mind bent to problem solving and delivering solutions.
             <br /><br />
-           <a href='https://github.com/DmitryVelichko' rel='noreferrer' target='_blank'> <i className="uil uil-github"></i>   Github</a>
+           <a href='https://github.com/DmitryVelichko' rel='noreferrer' target='_blank' className='git__link'> <i className="uil uil-github"></i>   Github</a>
             <br /><br />
-            <a href='https://leetcode.com/DmitryVelichko/' rel='noreferrer' target='_blank'><i class="uil uil-analytics"></i>   LeetCode Statistics</a>
+            <a href='https://leetcode.com/DmitryVelichko/' rel='noreferrer' target='_blank' className='leet__link'><i class="uil uil-analytics"></i>   LeetCode Statistics</a>
             <br /><br />
-            <a href='https://habr.com/ru/users/Dmitry_Velichko/posts/' rel='noreferrer' target='_blank'><i class="uil uil-notes"></i>    Articles on programming</a>
+            <a href='https://habr.com/ru/users/Dmitry_Velichko/posts/' rel='noreferrer' target='_blank' className='art__link'><i class="uil uil-notes"></i>    Articles on programming</a>
             <br /><br />
-            <a href='https://www.youtube.com/channel/UCMoXZFDHxWvNQHYfTo2nyPA/videos' rel='noreferrer' target='_blank'><i class="uil uil-youtube"></i>    YouTube channel</a>
+            <a href='https://www.youtube.com/channel/UCMoXZFDHxWvNQHYfTo2nyPA/videos' rel='noreferrer' target='_blank' className='yt__link'><i class="uil uil-youtube"></i>    YouTube channel</a>
           </p>
 
           <a download='' href={CV} className='button button--flex'>
