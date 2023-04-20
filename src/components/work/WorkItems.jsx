@@ -1,7 +1,7 @@
 import React from 'react';
 
 const WorkItems = ({ item }) => {
-  console.log(item)
+ 
   return (
     <div className='work__card' key={item.id}>
       <img src={item.image} alt='website front page' className='work__img' />

@@ -1,31 +1,23 @@
 import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import emailjs from 'emailjs-com';
 import './contact.css';
 
 const Contact = () => {
   const form = useRef();
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  //   emailjs
-  //     .sendForm(
-  //       'service_f5l5jin',
-  //       'template_5exatfi',
-  //       form.current,
-  //       'e4Dr4OpDKQmoWy1AI'
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
+    emailjs.sendForm('service_f5l5jin', 'template_cztc59k', e.target, 'e4Dr4OpDKQmoWy1AI')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+   e.target.reset()
+   alert("Email sent successfully! \nThank you) \nI will contact you soon =)")
+  };
 
-  //   e.target.reset();
-  // };
   return (
     <section className='contact section' id='contact'>
       <h2 className='section__title'>Get in Touch</h2>
@@ -95,7 +87,7 @@ const Contact = () => {
             Or you can complete this short form
           </h3>
 
-          <form ref={form} className='contact__form' action="https://formsubmit.co/dmitryvelichko2010@gmail.com" method="POST" >
+          <form ref={form} className='contact__form' onSubmit={sendEmail}>
             <div className='contact__form-div'>
               <label className='contact__form-tag'>Name</label>
               <input
@@ -119,7 +111,7 @@ const Contact = () => {
             <div className='contact__form-div contact__form-area'>
               <label className='contact__form-tag'>Project</label>
               <textarea
-                name='project'
+                name='message'
                 className='contact__form-input'
                 placeholder='Your message : )'
                 cols='30'
@@ -127,7 +119,7 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <button className='button button--flex'>
+            <button className='button button--flex' type='submit'>
               Send Message
               <svg
                 class='button__icon'
