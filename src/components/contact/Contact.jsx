@@ -1,25 +1,31 @@
-import React, { useRef } from 'react';
+import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import './contact.css';
+import ModalWindow from './ModalWindow';
 
 const Contact = () => {
-  const form = useRef();
+
+  const [modal, setModal] = useState(false)
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm('service_f5l5jin', 'template_cztc59k', e.target, 'e4Dr4OpDKQmoWy1AI')
       .then((result) => {
-          console.log(result.text);
+        console.log(result.text);
       }, (error) => {
-          console.log(error.text);
+        console.log(error.text);
       });
-   e.target.reset()
-   alert("Email sent successfully! \nThank you) \nI will contact you soon =)")
+    e.target.reset()
+    setModal(true)
+    setTimeout(() => {
+      setModal(false)
+    }, 3000);
   };
 
   return (
     <section className='contact section' id='contact'>
+      <ModalWindow visible={modal} setVisible={setModal} />
       <h2 className='section__title'>Get in Touch</h2>
       <span className='section__subtitle'>I'll be happy to hear from you!</span>
 
@@ -87,7 +93,7 @@ const Contact = () => {
             Or you can complete this short form
           </h3>
 
-          <form ref={form} className='contact__form' onSubmit={sendEmail}>
+          <form className='contact__form' onSubmit={sendEmail}>
             <div className='contact__form-div'>
               <label className='contact__form-tag'>Name</label>
               <input
