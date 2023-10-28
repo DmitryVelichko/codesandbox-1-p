@@ -8,8 +8,8 @@ const Skills = lazy(() => import('./components/skills/Skills'));
 const Qualification = lazy(() => import('./components/qualification/Qualification'));
 const Work = lazy(() => import('./components/work/Work'));
 const Testimonials = lazy(() => import('./components/testimonials/Testimonials'));
-const Contact = lazy(() => import('./components/footer/Footer'));
-const Footer = lazy(() => import('./components/contact/Contact'));
+const Contact = lazy(() => import('./components/contact/Contact'));
+const Footer = lazy(() => import('./components/footer/Footer'));
 const ScrollUp = lazy(() => import('./components/scrollup/ScrollUp'));
 const Services = lazy(() => import('./components/services/Services'));
 
@@ -18,6 +18,7 @@ function App() {
   return (
     <>
       <Suspense fallback={<Fallback/>}><Header /></Suspense>
+      <main className="main">
       <Suspense fallback={<Fallback/>}> <Home /></Suspense>
       <Suspense fallback={<Fallback/>}>  <About /></Suspense>
       <Suspense fallback={<Fallback/>}> <Skills /></Suspense>
@@ -26,6 +27,7 @@ function App() {
       <Suspense fallback={<Fallback/>}> <Work /></Suspense>
       <Suspense fallback={<Fallback/>}>   <Testimonials /></Suspense>
       <Suspense fallback={<Fallback/>}>  <Contact /></Suspense>
+      </main>
       <Suspense fallback={<Fallback/>}> <Footer /></Suspense>
       <Suspense fallback={<Fallback/>}> <ScrollUp /></Suspense>
     </>
