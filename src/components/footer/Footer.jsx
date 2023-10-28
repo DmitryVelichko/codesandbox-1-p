@@ -1,4 +1,5 @@
 import React from 'react';
+import SocialFooter from './SocialFooter'
 import './footer.css';
 
 const Footer = () => {
@@ -27,7 +28,8 @@ const Footer = () => {
         </ul>
 
         <div className='footer__social'>
-          <a
+        <SocialFooter/>
+          {/* <a
             href='https://www.linkedin.com/in/dmitryvelichko/'
             rel='noreferrer'
             className='footer__social-link'
@@ -52,7 +54,7 @@ const Footer = () => {
             target='_blank'
           >
             <i className='bx bxl-github'></i>
-          </a>
+          </a> */}
         </div>
         <span className="footer__copy">Dmitry Velichko {new Date().getFullYear()}</span>
       </div>

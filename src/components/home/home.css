@@ -16,12 +16,11 @@
 }
 
 .home__social-icon {
-  font-size: 1.25rem;
+  font-size: 1.9rem;
   color: var(--title-color);
 }
 
 .home__social-icon:hover {
-  color: var(--title-color-dark);
   transform: scale(1.5);
 }
 
@@ -33,13 +32,6 @@
   color: #FF0000;
 }
 
-.home__social-icon .uil-linkedin:hover {
-  color: #0A66C2;
-}
-
-.home__social-icon .uil-youtube:hover {
-  color: #FF0000;
-}
 
 .home__title {
   font-size: var(--big-font-size);
@@ -76,7 +68,7 @@
 }
 
 .home__img {
-  background: url('../../assets/about3.png');
+  background: url('../../assets/about3.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -106,6 +98,7 @@
 
 .home__scroll {
   margin-left: 9.25rem;
+  animation: jump2 1s ease-in-out infinite;
 }
 
 .wheel {
@@ -127,6 +120,15 @@
   font-weight: var(--font-medium);
   margin-right: var(--mb-0-25);
   margin-left: 2px;
+}
+
+@keyframes jump2 {
+  0%, 100% {
+    transform: translateY(0); /* Start and end position: no vertical movement */
+  }
+  50% {
+    transform: translateY(-15px); /* Middle position: jump up by 10 pixels */
+  }
 }
 
 .home__scroll-arrow {

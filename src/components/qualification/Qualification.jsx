@@ -149,22 +149,22 @@ const Qualification = () => {
                 <span className='qualification__line'></span>
               </div>
               <div>
-                <h3 className='qualification__title'>Director</h3>
+                <h3 className='qualification__title'>Translator and Interpreter</h3>
                 <span className='qualification__subtitle'>
-                Museum of S. Korolev<br/> (Museum of Astronautics branch)
+                Museum of Astronautics
                 </span>
                 <div className='qualification__calendar'>
-                  <i className='uil uil-calendar-alt'></i>       2017 - 2019
+                  <i className='uil uil-calendar-alt'></i>       2014 - 2019
                 </div>
               </div>
             </div>
 
             <div className='qualification__data'>
               <div>
-                <h3 className='qualification__title'>Translator and Interpreter</h3>
+                <h3 className='qualification__title'>Tour Guide</h3>
                 <span className='qualification__subtitle'>Museum of Astronautics, Moscow</span>
                 <div className='qualification__calendar'>
-                  <i className='uil uil-calendar-alt'></i>       2011 - 2019
+                  <i className='uil uil-calendar-alt'></i>       2011 - 2013
                 </div>
               </div>
 

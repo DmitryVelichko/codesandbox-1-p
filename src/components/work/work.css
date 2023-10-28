@@ -16,7 +16,7 @@
 }
 
 .work__item:hover {
-  background-color: var(--title-color);
+  background-color: hsl(var(--hue), var(--sat), 30%);
   color: var(--container-color);
 }
 
@@ -70,7 +70,7 @@
 /* Active Work */
 
 .active-work {
-  background-color: var(--title-color);
+  background-color: var(--title-color-dark) !important;
   color: var(--container-color);
 }
 

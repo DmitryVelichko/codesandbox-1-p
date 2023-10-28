@@ -1,6 +1,6 @@
-import Work1 from '../../assets/work1.png'
-import Work2 from '../../assets/work2.png'
-import Work3 from '../../assets/work3.png'
+import Work1 from '../../assets/work1.webp'
+import Work2 from '../../assets/work2.webp'
+import Work3 from '../../assets/work3.webp'
 
 export const projectsData = [
     {
@@ -9,7 +9,7 @@ export const projectsData = [
         title: 'NFT Marketplace',
         category: 'web3',
         link: 'https://cryptoket.vercel.app/',
-        link2:'https://google.com'
+        link2:'https://github.com/DmitryVelichko/nft-marketplace'
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ export const projectsData = [
         title: 'GoVegan Cafe',
         category: 'websites',
         link: 'https://govegan.ge',
-        link2:'https://google.com'
+        link2:'https://github.com/DmitryVelichko/go-vegan-cafe-website'
     },
     {
         id: 3,
@@ -25,7 +25,7 @@ export const projectsData = [
         title: 'Metaverse Landing Page',
         category: 'websites',
         link: 'https://metaverse-lp.vercel.app/',
-        link2:'https://google.com'
+        link2:'https://github.com/DmitryVelichko/metaverse-lp'
     },
  
     
