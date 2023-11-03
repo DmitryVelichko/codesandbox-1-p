@@ -7,7 +7,7 @@ export const Data = [
         id: 1,
         image: Image1,
         title: 'Stanislav, Business Owner',
-        description: 'Our e-commerce company have been looking for a developer who could redesign our website using ReactJS. Dmitry has done a fantastic job. I can definitely recommend him to anyone.',
+        description: 'My e-commerce company have been looking for a developer who could redesign our website using ReactJS. Dmitry has done a fantastic job. I can definitely recommend him to anyone.',
     },
 
     {
@@ -20,6 +20,6 @@ export const Data = [
         id: 3,
         image: Image3,
         title: 'Nargiza, Project Manager',
-        description: 'We hired Dmitry to help us with our company\'s blockchain dapp. The results were outstanding and Dmitry has done amazing job. Always helpful. And amazing customer service.',
+        description: 'Our company ThirdWeb Pro Solutions hired Dmitry to help us with our NFT marketplace blockchain dapp. Dmitry has done an amazing job creating both frontend and backend for the dapp.',
     }
 ]

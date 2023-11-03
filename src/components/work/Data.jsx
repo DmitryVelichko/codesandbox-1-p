@@ -1,6 +1,7 @@
 import Work1 from '../../assets/work1.webp'
 import Work2 from '../../assets/work2.webp'
 import Work3 from '../../assets/work3.webp'
+import Work4 from '../../assets/work4.webp'
 
 export const projectsData = [
     {
@@ -22,13 +23,19 @@ export const projectsData = [
     {
         id: 3,
         image: Work3,
-        title: 'Metaverse Landing Page',
+        title: 'Landing Page with Animations',
         category: 'websites',
         link: 'https://metaverse-lp.vercel.app/',
         link2:'https://github.com/DmitryVelichko/metaverse-lp'
     },
- 
-    
+    {
+        id: 4,
+        image: Work4,
+        title: '3D Website',
+        category: 'websites',
+        link: 'https://r1ul0z.csb.app/',
+        link2:'https://github.com/DmitryVelichko/3Dwebsite-spline-1-0'
+    },
 ]
 
 export const projectsNav = [
