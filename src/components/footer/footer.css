@@ -1,0 +1,106 @@
+.footer {
+  background-color: var(--container-color);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer__container {
+  padding: 2rem 0 6rem;
+}
+
+.footer__title,
+.footer__link {
+  color: var(--title-color);
+}
+
+.footer__title {
+  text-align: center;
+  margin-bottom: var(--mb-2);
+}
+
+.footer__link {
+  
+  padding: 0.25rem 0.75rem;
+}
+
+.footer__link:hover {
+
+  padding: 0.25rem 0.75rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background-color: var(--title-color);
+  color: var(--container-color);
+}
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.5rem;
+  margin-bottom: var(--mb-2);
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 1.25rem;
+}
+
+.footer__social-link {
+  background-color: var(--title-color);
+  color: var(--container-color);
+  font-size: 1.125rem;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  display: inline-flex;
+}
+
+.footer__social-link:hover {
+  background-color: var(--title-color-dark);
+}
+
+.footer__copy {
+  display: block;
+  margin-top: 4.5rem;
+  color: var(--title-color);
+  text-align: center;
+  font-size: var(--smaller-font-size);
+}
+
+.home__socialIcons__footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  grid-gap: 30px; /* Space between grid items */
+}
+
+.home__social-icon__footer {
+  font-size: 1.9rem;
+  color: var(--title-color);
+}
+
+.home__social-icon__footer:hover {
+  transform: scale(1.5);
+}
+
+.home__social-icon__footer .uil-linkedin {
+  color: #0a66c2;
+}
+
+.home__social-icon__footer .uil-youtube {
+  color: #ff0000;
+  
+}
+.home__social-icon__footer .uil-github {
+
+}
+
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .footer__social-link {
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+  }
+}
